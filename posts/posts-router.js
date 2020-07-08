@@ -133,6 +133,7 @@ router.delete("/:id", (req, res) => {
 //update a post with a specified id
 router.put("/:id", (req, res) => {
   const changes = req.body;
+  const { id } = req.params;
 
   if (!Posts.findById(id)) {
     res.status(404).json({
