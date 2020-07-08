@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.post {
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}

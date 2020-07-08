@@ -63,12 +63,14 @@ function App() {
       </div>
       {posts.map((post) => {
         return (
-          <Post
-            key={post.id}
-            post={post}
-            refresh={refresh}
-            setRefresh={setRefresh}
-          />
+          <div className="post">
+            <Post
+              key={post.id}
+              post={post}
+              refresh={refresh}
+              setRefresh={setRefresh}
+            />
+          </div>
         );
       })}
     </div>
